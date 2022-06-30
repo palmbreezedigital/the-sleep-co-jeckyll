@@ -3,3 +3,21 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+header, 
+footer {
+    background-color: lightblue;
+    padding: 5%;
+}
+
+section {
+    padding: 5%;
+}
+
+.card {
+    padding: 1rem;
+    border: 2px solid;
+    border-radius: 1rem;
+    max-width: 20%;
+    display: inline-block;
+}

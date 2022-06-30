@@ -1,5 +1,23 @@
 ---
 layout: default
 title: Homepage
+fruit:
+-  title: Apple 
+   description: Exciting things are happening
+-  title: Pineapple
+   description: Woof woof woof!
+-  title: Pear
+   description: Free foods to make friends
+-  title: Banana
+   description: Free foods to make friends
 ---
-<h1>Welcome to your homepage!</h1>
+<section>
+
+    {% for item in page.fruit %}
+    <div class="card">
+        <h2> {{item.title}} </h2>
+        <p> {{item.description}} </p>
+    </div>
+    {% endfor %}
+
+</section>
